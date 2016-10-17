@@ -7,14 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E4FF3EA1DB488EA00A17AFB /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E4FF3E91DB488EA00A17AFB /* LoginVC.swift */; };
 		4E6DE6081DB4868400F9AA84 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6DE6071DB4868400F9AA84 /* AppDelegate.swift */; };
 		4E6DE60A1DB4868400F9AA84 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6DE6091DB4868400F9AA84 /* ViewController.swift */; };
 		4E6DE60D1DB4868400F9AA84 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E6DE60B1DB4868400F9AA84 /* Main.storyboard */; };
 		4E6DE60F1DB4868400F9AA84 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E6DE60E1DB4868400F9AA84 /* Assets.xcassets */; };
 		4E6DE6121DB4868400F9AA84 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E6DE6101DB4868400F9AA84 /* LaunchScreen.storyboard */; };
+		776E1C6C105D96F307EA07AB /* Pods_AnimationsJazz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 024CFF4A10CF5B6F847E35DD /* Pods_AnimationsJazz.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		024CFF4A10CF5B6F847E35DD /* Pods_AnimationsJazz.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AnimationsJazz.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E4FF3E41DB4881F00A17AFB /* AnimationsJazz-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AnimationsJazz-Bridging-Header.h"; sourceTree = "<group>"; };
+		4E4FF3E91DB488EA00A17AFB /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		4E6DE6041DB4868400F9AA84 /* AnimationsJazz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimationsJazz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E6DE6071DB4868400F9AA84 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4E6DE6091DB4868400F9AA84 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +27,8 @@
 		4E6DE60E1DB4868400F9AA84 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4E6DE6111DB4868400F9AA84 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4E6DE6131DB4868400F9AA84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5CA45115ACC835FA51BF6AA2 /* Pods-AnimationsJazz.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimationsJazz.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AnimationsJazz/Pods-AnimationsJazz.debug.xcconfig"; sourceTree = "<group>"; };
+		D623956E13C7788212060B60 /* Pods-AnimationsJazz.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimationsJazz.release.xcconfig"; path = "Pods/Target Support Files/Pods-AnimationsJazz/Pods-AnimationsJazz.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +36,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				776E1C6C105D96F307EA07AB /* Pods_AnimationsJazz.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4E4FF3E81DB488D600A17AFB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4E4FF3E91DB488EA00A17AFB /* LoginVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
 		4E6DE5FB1DB4868400F9AA84 = {
 			isa = PBXGroup;
 			children = (
 				4E6DE6061DB4868400F9AA84 /* AnimationsJazz */,
 				4E6DE6051DB4868400F9AA84 /* Products */,
+				7E59C0AF140B98ACF01D99B8 /* Pods */,
+				8935EB0DF7FF519DBF8D2F7C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +72,33 @@
 		4E6DE6061DB4868400F9AA84 /* AnimationsJazz */ = {
 			isa = PBXGroup;
 			children = (
+				4E4FF3E81DB488D600A17AFB /* Controller */,
 				4E6DE6071DB4868400F9AA84 /* AppDelegate.swift */,
 				4E6DE6091DB4868400F9AA84 /* ViewController.swift */,
 				4E6DE60B1DB4868400F9AA84 /* Main.storyboard */,
 				4E6DE60E1DB4868400F9AA84 /* Assets.xcassets */,
 				4E6DE6101DB4868400F9AA84 /* LaunchScreen.storyboard */,
 				4E6DE6131DB4868400F9AA84 /* Info.plist */,
+				4E4FF3E41DB4881F00A17AFB /* AnimationsJazz-Bridging-Header.h */,
 			);
 			path = AnimationsJazz;
+			sourceTree = "<group>";
+		};
+		7E59C0AF140B98ACF01D99B8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5CA45115ACC835FA51BF6AA2 /* Pods-AnimationsJazz.debug.xcconfig */,
+				D623956E13C7788212060B60 /* Pods-AnimationsJazz.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8935EB0DF7FF519DBF8D2F7C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				024CFF4A10CF5B6F847E35DD /* Pods_AnimationsJazz.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +108,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4E6DE6161DB4868400F9AA84 /* Build configuration list for PBXNativeTarget "AnimationsJazz" */;
 			buildPhases = (
+				03DFE8C217328C7572D95EAE /* [CP] Check Pods Manifest.lock */,
 				4E6DE6001DB4868400F9AA84 /* Sources */,
 				4E6DE6011DB4868400F9AA84 /* Frameworks */,
 				4E6DE6021DB4868400F9AA84 /* Resources */,
+				0F458B4EB13040E45E21D379 /* [CP] Embed Pods Frameworks */,
+				1D2CB33B13F978F2FBACA72B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -97,6 +137,7 @@
 					4E6DE6031DB4868400F9AA84 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = C66PLD3WQ6;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -132,6 +173,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		03DFE8C217328C7572D95EAE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		0F458B4EB13040E45E21D379 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AnimationsJazz/Pods-AnimationsJazz-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1D2CB33B13F978F2FBACA72B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AnimationsJazz/Pods-AnimationsJazz-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4E6DE6001DB4868400F9AA84 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -139,6 +228,7 @@
 			files = (
 				4E6DE60A1DB4868400F9AA84 /* ViewController.swift in Sources */,
 				4E6DE6081DB4868400F9AA84 /* AppDelegate.swift in Sources */,
+				4E4FF3EA1DB488EA00A17AFB /* LoginVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,26 +347,33 @@
 		};
 		4E6DE6171DB4868400F9AA84 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5CA45115ACC835FA51BF6AA2 /* Pods-AnimationsJazz.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = C66PLD3WQ6;
 				INFOPLIST_FILE = AnimationsJazz/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.redwoodempiredev.AnimationsJazz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AnimationsJazz/AnimationsJazz-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		4E6DE6181DB4868400F9AA84 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D623956E13C7788212060B60 /* Pods-AnimationsJazz.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = C66PLD3WQ6;
 				INFOPLIST_FILE = AnimationsJazz/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.redwoodempiredev.AnimationsJazz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AnimationsJazz/AnimationsJazz-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -300,6 +397,7 @@
 				4E6DE6181DB4868400F9AA84 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
