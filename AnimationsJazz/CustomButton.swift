@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import pop
 
 @IBDesignable
 class CustomButton: UIButton {
@@ -37,6 +38,38 @@ class CustomButton: UIButton {
         
         self.layer.cornerRadius = cornerRadius
         
+        self.addTarget(self, action: #selector(CustomButton.scaleToSmall), for: .touchDown)
+        self.addTarget(self, action: #selector(CustomButton.scaleToSmall), for: .touchDragEnter)
+        self.addTarget(self, action: #selector(CustomButton.scaleAnimation), for: .touchUpInside)
+        self.addTarget(self, action: #selector(CustomButton.scaleDefault), for: .touchDragExit)
+        
     }
     
+    // MARK: - Animation methods
+    
+    func scaleToSmall() {
+        
+        let scaleAnimation = POPBasicAnimation(propertyNamed: kPOPLayerScaleXY)
+        scaleAnimation?.toValue = NSValue(cgSize: CGSize(width: 0.9, height: 0.9))
+        
+        self.layer.pop_add(scaleAnimation, forKey: "layerScaleSmallAnimation")
+    }
+    
+    func scaleAnimation() {
+        
+        let scaleAnimation = POPSpringAnimation(propertyNamed: kPOPLayerScaleXY)
+        scaleAnimation?.velocity = NSValue(cgSize: CGSize(width: 2.0, height: 2.0))
+        scaleAnimation?.toValue = NSValue(cgSize: CGSize(width: 1.0, height: 1.0))
+        scaleAnimation?.springBounciness = 18
+        self.layer.pop_add(scaleAnimation, forKey: "layerScaleSpringAnimation")
+        
+    }
+    
+    func scaleDefault() {
+        
+        let scaleAnimation = POPBasicAnimation(propertyNamed: kPOPLayerScaleXY)
+        scaleAnimation?.toValue = NSValue(cgSize: CGSize(width: 1, height: 1))
+        self.layer.pop_add(scaleAnimation, forKey: "layerScaleDefaultAnimation")
+        
+    }
 }
