@@ -9,16 +9,25 @@
 import UIKit
 
 class LoginVC: UIViewController {
+    
+    // MARK: - Properties
+    
+    var animationEngine: AnimationEngine!
+    
+    // MARK: - Outlets
+    
+    @IBOutlet var stackViewXConstraint: NSLayoutConstraint!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        self.animationEngine = AnimationEngine(constraints: [stackViewXConstraint])
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    override func viewDidAppear(_ animated: Bool) {
+        
+        self.animationEngine.animateOnScreen()
     }
     
 

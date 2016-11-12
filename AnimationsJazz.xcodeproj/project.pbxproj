@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		4E11C0111DB52DBF006D523B /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E11C0101DB52DBF006D523B /* CustomTextField.swift */; };
 		4E11C0131DB53BE9006D523B /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E11C0121DB53BE9006D523B /* CustomButton.swift */; };
+		4E459AE11DD6E17A00CEFB06 /* AnimationEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E459AE01DD6E17A00CEFB06 /* AnimationEngine.swift */; };
 		4E4FF3EA1DB488EA00A17AFB /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E4FF3E91DB488EA00A17AFB /* LoginVC.swift */; };
 		4E6DE6081DB4868400F9AA84 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6DE6071DB4868400F9AA84 /* AppDelegate.swift */; };
 		4E6DE60A1DB4868400F9AA84 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6DE6091DB4868400F9AA84 /* ViewController.swift */; };
@@ -22,6 +23,7 @@
 		024CFF4A10CF5B6F847E35DD /* Pods_AnimationsJazz.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AnimationsJazz.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E11C0101DB52DBF006D523B /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		4E11C0121DB53BE9006D523B /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		4E459AE01DD6E17A00CEFB06 /* AnimationEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationEngine.swift; sourceTree = "<group>"; };
 		4E4FF3E41DB4881F00A17AFB /* AnimationsJazz-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AnimationsJazz-Bridging-Header.h"; sourceTree = "<group>"; };
 		4E4FF3E91DB488EA00A17AFB /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		4E6DE6041DB4868400F9AA84 /* AnimationsJazz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimationsJazz.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -56,6 +58,14 @@
 			name = View;
 			sourceTree = "<group>";
 		};
+		4E459ADF1DD6E16100CEFB06 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				4E459AE01DD6E17A00CEFB06 /* AnimationEngine.swift */,
+			);
+			name = Util;
+			sourceTree = "<group>";
+		};
 		4E4FF3E81DB488D600A17AFB /* Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +95,7 @@
 		4E6DE6061DB4868400F9AA84 /* AnimationsJazz */ = {
 			isa = PBXGroup;
 			children = (
+				4E459ADF1DD6E16100CEFB06 /* Util */,
 				4E11C00F1DB52DA3006D523B /* View */,
 				4E4FF3E81DB488D600A17AFB /* Controller */,
 				4E6DE6071DB4868400F9AA84 /* AppDelegate.swift */,
@@ -242,6 +253,7 @@
 			files = (
 				4E11C0111DB52DBF006D523B /* CustomTextField.swift in Sources */,
 				4E6DE60A1DB4868400F9AA84 /* ViewController.swift in Sources */,
+				4E459AE11DD6E17A00CEFB06 /* AnimationEngine.swift in Sources */,
 				4E6DE6081DB4868400F9AA84 /* AppDelegate.swift in Sources */,
 				4E4FF3EA1DB488EA00A17AFB /* LoginVC.swift in Sources */,
 				4E11C0131DB53BE9006D523B /* CustomButton.swift in Sources */,
