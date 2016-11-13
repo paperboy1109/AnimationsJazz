@@ -62,6 +62,9 @@ class AnimationEngine {
                 moveAnimation?.springBounciness = 18
                 moveAnimation?.springSpeed = 18
                 
+                moveAnimation?.dynamicsFriction += 10
+                moveAnimation?.dynamicsMass = 10
+                
                 let layoutConstraint = self.constraints[index]
                 layoutConstraint.pop_add(moveAnimation, forKey: "moveOnScreen")
                 
